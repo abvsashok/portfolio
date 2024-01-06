@@ -48,7 +48,7 @@ export const Interface = ({ section }) => {
       }}>
         <div className="flex flex-col">
           <h1 className="text-6xl font-extrabold leading-snug text-center">
-            <span className="text-[#334155] px-1">My Work</span>
+            <span className="text-gray-100 px-1">My Work</span>
           </h1>
           <Projects />
         </div>
@@ -75,9 +75,9 @@ const AboutSection = () => {
           {/* https://docs.google.com/document/d/1-c_cnL7e-3868XBTRup2TLNxsmNqCzl1JE6QczR-waU/edit?usp=sharing */}
 
           <h1 className="text-6xl font-extrabold leading-snug">
-            <span className="text-[#334155] px-1 italic">Ashok Kumar Chokkapu</span>
+            <span className="text-white px-1 italic">Ashok Kumar Chokkapu</span>
           </h1>
-          <span className="text-gray-800 px-1 text-xl italic ">
+          <span className="text-gray-100 px-1 text-xl italic ">
             Hello I am a<b> FullStack Developer</b> from Toronto, Canada.
           </span>
           <div className="flex gap-2 mt-3 items-end justify-items-center">
@@ -92,13 +92,14 @@ const AboutSection = () => {
             {/* <button className="text-white bg-orange-600 hover:bg-orange-400 font-medium px-3 py-2 rounded-md">
               Contact Me
             </button> */}
-            <a target="_blank" href="https://docs.google.com/document/d/1-c_cnL7e-3868XBTRup2TLNxsmNqCzl1JE6QczR-waU/edit?usp=sharing"><button className="text-white bg-orange-600 hover:bg-orange-400 font-medium px-3 py-2 rounded-md">
+            <a target="_blank" href="https://docs.google.com/document/d/1-c_cnL7e-3868XBTRup2TLNxsmNqCzl1JE6QczR-waU/edit?usp=sharing">
+              <button className="text-white border-orange-600 border hover:bg-orange-400 font-medium px-3 py-2 rounded-md">
               Download Resume
             </button>
             </a>
           </div>
-          <div className="flex gap-2 mt-3 text-gray-800 px-1 text-xl">
-            <span className="">
+          <div className="flex gap-2 mt-3 text-gray-100 px-1 text-xl absolute top-10">
+            <span className="border-b-4 border-gray-100 font-bold">
               ashokchokkapu@gmail.com<br />
               +1 4377 332 887
             </span>

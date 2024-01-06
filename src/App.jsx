@@ -1,4 +1,4 @@
-import { Scroll, ScrollControls } from "@react-three/drei";
+import { PerspectiveCamera, Scroll, ScrollControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { MotionConfig } from "framer-motion";
 import { Leva } from "leva";
@@ -27,9 +27,12 @@ function App() {
       >
         {/* gl={{ antialias: false }} dpr={[1, 1.5]} */}
         {/* camera={{ position: [0, 3, 10], fov: 42 }} */}
-        <Canvas shadows camera={{ position: [0, 3, 10], fov: 42 }}>
-          <color attach="background" args={["#f0f0f0"]} />
+        {/* camera={{ position: [0, 3, 10], fov: 42 }} */}
+        <Canvas shadows  camera={{ position: [0, 3, 10], fov: 42 }}>
+          <color attach="background" args={["#334155"]} />
           <fog attach="fog" args={['red', 20, -5]} />
+          {/* <PerspectiveCamera position={[0, 0, 10]} fov={42} aspect={window.innerWidth / window.innerHeight} near={0.5} far={1000} /> */}
+
           <ambientLight intensity={1.5} />
           <pointLight position={[10, 10, 10]} intensity={1} castShadow />
           <ScrollControls pages={3} damping={0.1}>

@@ -57,13 +57,13 @@ export const Experience = (props) => {
       </motion.group>
       <motion.group
         // position={[0, -1.5, -10]}
-        position={[-2, 0, 0]}
+        position={[4, 0, 0]}
         animate={{
           z: 0,
           y: 0,
         }}
       >
-        <SampleBox />
+        {/* <SampleBox /> */}
       </motion.group>
       <motion.group
         position={[2, -(2 * 8), 0]}
