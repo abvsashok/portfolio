@@ -19,8 +19,8 @@ const ParticleSystem = () => {
         geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
         const material = new THREE.PointsMaterial({
-            color: 'blue',
-            size: 0.1,
+            color: 'gray',
+            size: 0.15,
         });
 
         const particles = new THREE.Points(geometry, material);

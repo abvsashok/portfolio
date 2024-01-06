@@ -80,14 +80,14 @@ const AboutSection = () => {
           <span className="text-gray-100 px-1 text-xl italic ">
             Hello I am a<b> FullStack Developer</b> from Toronto, Canada.
           </span>
-          <div className="flex gap-2 mt-3 items-end justify-items-center">
+          <div className="flex gap-2 mt-3 items-end justify-items-center my-2 mb-3">
             <a
               href="https://www.linkedin.com/in/ashok-kumar-chokkapu-40961073/"  // Replace with your LinkedIn profile link
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-700 hover:text-blue-500"
             >
-              <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+              <FontAwesomeIcon icon={faLinkedin} size="2xl" className="mr-3" />
             </a>
             {/* <button className="text-white bg-orange-600 hover:bg-orange-400 font-medium px-3 py-2 rounded-md">
               Contact Me
@@ -98,7 +98,7 @@ const AboutSection = () => {
             </button>
             </a>
           </div>
-          <div className="flex gap-2 mt-3 text-gray-100 px-1 text-xl absolute top-10">
+          <div className="flex gap-2 mt-5 text-gray-100 px-1 text-xl">
             <span className="border-b-4 border-gray-100 font-bold">
               ashokchokkapu@gmail.com<br />
               +1 4377 332 887

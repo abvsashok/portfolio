@@ -29,7 +29,7 @@ function App() {
         {/* camera={{ position: [0, 3, 10], fov: 42 }} */}
         {/* camera={{ position: [0, 3, 10], fov: 42 }} */}
         <Canvas shadows  camera={{ position: [0, 3, 10], fov: 42 }}>
-          <color attach="background" args={["#334155"]} />
+          <color attach="background" args={["#2b180d"]} />
           <fog attach="fog" args={['red', 20, -5]} />
           {/* <PerspectiveCamera position={[0, 0, 10]} fov={42} aspect={window.innerWidth / window.innerHeight} near={0.5} far={1000} /> */}
 
