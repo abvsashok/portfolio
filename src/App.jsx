@@ -27,7 +27,7 @@ function App() {
       >
         {/* gl={{ antialias: false }} dpr={[1, 1.5]} */}
         {/* camera={{ position: [0, 3, 10], fov: 42 }} */}
-        <Canvas shadows gl={{ antialias: false }} dpr={[1, 1.5]}>
+        <Canvas shadows camera={{ position: [0, 3, 10], fov: 42 }}>
           <color attach="background" args={["#f0f0f0"]} />
           <fog attach="fog" args={['red', 20, -5]} />
           <ambientLight intensity={1.5} />

@@ -20,7 +20,7 @@ function SampleBox(props) {
             onPointerOver={(event) => setHover(true)}
             onPointerOut={(event) => setHover(false)}>
             <sphereGeometry args={[5, 12, 12]} />
-            <meshStandardMaterial color={hovered ? 'gray' : 'gray'}  />
+            <meshStandardMaterial attach="material" color={0x0000FF} />
         </mesh>
     )
 }

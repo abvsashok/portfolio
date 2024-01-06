@@ -44,7 +44,7 @@ export const Interface = ({ section }) => {
       </Section>
 
       <div className="relative flex overflow-hidden align-middle justify-center p-4 py-12 mb-5" style={{
-      
+
       }}>
         <div className="flex flex-col">
           <h1 className="text-6xl font-extrabold leading-snug text-center">
@@ -77,8 +77,9 @@ const AboutSection = () => {
           <h1 className="text-6xl font-extrabold leading-snug">
             <span className="text-[#334155] px-1 italic">Ashok Kumar Chokkapu</span>
           </h1>
-          <span className="text-gray-500 px-1 text-xl italic">
-            Hello I am a<b> FullStack Developer</b> from Toronto, Canada. I have rich experience of 9+ years in web developemnt.</span>
+          <span className="text-gray-800 px-1 text-xl italic ">
+            Hello I am a<b> FullStack Developer</b> from Toronto, Canada.
+          </span>
           <div className="flex gap-2 mt-3 items-end justify-items-center">
             <a
               href="https://www.linkedin.com/in/ashok-kumar-chokkapu-40961073/"  // Replace with your LinkedIn profile link
@@ -96,8 +97,8 @@ const AboutSection = () => {
             </button>
             </a>
           </div>
-          <div className="flex gap-2 mt-3">
-            <span className="font-bold">
+          <div className="flex gap-2 mt-3 text-gray-800 px-1 text-xl">
+            <span className="">
               ashokchokkapu@gmail.com<br />
               +1 4377 332 887
             </span>
