@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 const links = [
     { name: 'Open roles', href: '#' },
     { name: 'Internship program', href: '#' },
@@ -10,6 +11,7 @@ const stats = [
     { name: 'Hours per week', value: '40' },
     { name: 'Paid time off', value: 'Unlimited' },
 ]
+const skills = [{ title: 'React.Js', level: 40 }, { title: 'TypeScript', level: 80 }, { title: 'Node.Js', level: 40 }, { title: 'Spring Boot', level: 40 }, { title: 'GraphQl', level: 40 }]
 
 export default function About() {
     return (
@@ -44,13 +46,43 @@ export default function About() {
                 />
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:mx-0">
+                <div className="">
                     <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">About Me</h2>
                     <p className="mt-6 text-lg leading-8 text-white w-full">
                         I am a passionate Full Stack Web Developer with 9 years of experience.
 
-                        Over the past 9 years, I have been dedicated to developing full-stack web applications using , React.js, TypeScript, Java, Spring Boot, Node.js, GraphQL and MySQL Database. Additionally, I have significant expertise in Angular and AWS Cloud service
+                        Over the past 9 years, I have been dedicated to developing full-stack web applications using , React.js, TypeScript, Java, Spring Boot, Node.js, GraphQL and MySQL Database. <br />Additionally, I have significant expertise in Angular and AWS Cloud service
                     </p>
+                </div>
+                <div className=" mt-8 space-y-4 ">
+                    {skills.map((skill, index) => (
+                        <div className="w-64" key={index}>
+                            <motion.h2
+                                className="text-xl font-bold text-white"
+                            >
+                                {skill.title}
+                            </motion.h2>
+                            <div className="h-2 w-full bg-gray-200 rounded-full mt-2">
+                                <motion.div
+                                    className="h-full bg-indigo-500 rounded-full "
+                                    style={{ width: `${skill.level}%` }}
+                                    initial={{
+                                        scaleX: skill.level,
+                                        originX: skill.level,
+                                    }}
+                                    variants={{
+                                        visible: {
+                                            scaleX: 1,
+                                            transition: {
+                                                duration: 1,
+                                                delay: 1 + index * 0.2,
+                                            },
+                                        },
+                                    }}
+                                />
+                            </div>
+                        </div>
+                    ))}
                 </div>
                 {/* <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">

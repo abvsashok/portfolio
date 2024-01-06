@@ -9,7 +9,7 @@ function SampleBox(props) {
     const [hovered, setHover] = useState(false)
     const [active, setActive] = useState(false)
     // Subscribe this component to the render-loop, rotate the mesh every frame
-    useFrame((state, delta) => (meshRef.current.rotation.x += delta * 0.05))
+    useFrame((state, delta) => (meshRef.current.rotation.x += delta * 0.3))
     // Return view, these are regular three.js elements expressed in JSX
     return (
         <mesh
@@ -19,8 +19,8 @@ function SampleBox(props) {
             onClick={(event) => setActive(!active)}
             onPointerOver={(event) => setHover(true)}
             onPointerOut={(event) => setHover(false)}>
-            <sphereGeometry args={[5, 24, 24]} />
-            <meshStandardMaterial color={hovered ? 'hotpink' : 'hotpink'} wireframe />
+            <sphereGeometry args={[5, 12, 12]} />
+            <meshStandardMaterial color={hovered ? 'gray' : 'gray'}  />
         </mesh>
     )
 }

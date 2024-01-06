@@ -25,18 +25,22 @@ function App() {
           ...framerMotionConfig,
         }}
       >
-        <Canvas shadows camera={{ position: [0, 3, 10], fov: 42 }}>
+        {/* gl={{ antialias: false }} dpr={[1, 1.5]} */}
+        {/* camera={{ position: [0, 3, 10], fov: 42 }} */}
+        <Canvas shadows gl={{ antialias: false }} dpr={[1, 1.5]}>
           <color attach="background" args={["#f0f0f0"]} />
-                 <fog attach="fog" args={['red', 20, -5]} />
-       <ambientLight intensity={1.5} />
-       <pointLight position={[10, 10, 10]} intensity={1} castShadow />
-          <ScrollControls pages={4} damping={0.1}>
+          <fog attach="fog" args={['red', 20, -5]} />
+          <ambientLight intensity={1.5} />
+          <pointLight position={[10, 10, 10]} intensity={1} castShadow />
+          <ScrollControls pages={3} damping={0.1}>
             <ScrollManager section={section} onSectionChange={setSection} />
             <Scroll>
               <Experience section={section} menuOpened={menuOpened} />
+
             </Scroll>
             <Scroll html>
               <Interface section={section} />
+
             </Scroll>
           </ScrollControls>
         </Canvas>

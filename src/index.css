@@ -10,3 +10,6 @@
 body {
   margin: 0;
 }
+.card:hover .opacity-0 {
+  opacity: 1;
+}

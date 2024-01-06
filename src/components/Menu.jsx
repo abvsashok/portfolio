@@ -8,19 +8,16 @@ export const Menu = (props) => {
         className="z-20 fixed top-12 right-12 p-3 bg-indigo-600 w-11 h-11 rounded-md"
       >
         <div
-          className={`bg-white h-0.5 rounded-md w-full transition-all ${
-            menuOpened ? "rotate-45  translate-y-0.5" : ""
-          }`}
+          className={`bg-white h-0.5 rounded-md w-full transition-all ${menuOpened ? "rotate-45  translate-y-0.5" : ""
+            }`}
         />
         <div
-          className={`bg-white h-0.5 rounded-md w-full my-1 ${
-            menuOpened ? "hidden" : ""
-          }`}
+          className={`bg-white h-0.5 rounded-md w-full my-1 ${menuOpened ? "hidden" : ""
+            }`}
         />
         <div
-          className={`bg-white h-0.5 rounded-md w-full transition-all ${
-            menuOpened ? "-rotate-45" : ""
-          }`}
+          className={`bg-white h-0.5 rounded-md w-full transition-all ${menuOpened ? "-rotate-45" : ""
+            }`}
         />
       </button>
       <div
@@ -28,10 +25,10 @@ export const Menu = (props) => {
       ${menuOpened ? "w-80" : "w-0"}`}
       >
         <div className="flex-1 flex items-start justify-center flex-col gap-6 p-8">
-          <MenuButton label="About" onClick={() => onSectionChange(0)} />
-          <MenuButton label="Skills" onClick={() => onSectionChange(1)} />
+          <MenuButton label="Home" onClick={() => onSectionChange(0)} />
+          <MenuButton label="About/Skills" onClick={() => onSectionChange(1)} />
           <MenuButton label="Projects" onClick={() => onSectionChange(2)} />
-          <MenuButton label="Contact" onClick={() => onSectionChange(3)} />
+          {/* <MenuButton label="Contact" onClick={() => onSectionChange(3)} /> */}
         </div>
       </div>
     </>

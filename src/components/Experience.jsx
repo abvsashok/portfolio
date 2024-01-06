@@ -14,6 +14,8 @@ import { Office } from "./Office";
 import ParticleSystem from "./Particles";
 import SampleBox from "./SampleBox";
 import Bubbles from "./Bubbles";
+import Image from "./Photo";
+import Images from "./Img";
 
 export const Experience = (props) => {
   const { section, menuOpened } = props;
@@ -50,28 +52,25 @@ export const Experience = (props) => {
         }}
       >
         <ParticleSystem />
+        {/* <Bubbles /> */}
         {/* <Office section={section} /> */}
       </motion.group>
-
-      {/* SKILLS */}
       <motion.group
         // position={[0, -1.5, -10]}
-        position={[2, -(section * 8), 0]}
-        // animate={{
-        //   z: section === 1 ? 0 : -10,
-        //   y: section === 1 ? -viewport.height : -1.5,
-        // }}
+        position={[-1, 0, 0]}
+        animate={{
+          z: 0,
+          y: 0,
+        }}
       >
-        <SampleBox />
+        {/* <SampleBox /> */}
       </motion.group>
       <motion.group
-        position={[0, -(section * 8), 0]}
-      // animate={{
-      //   z: 0,
-      //   y: viewport.height,
-      // }}
+        position={[2, -(2 * 8), 0]}
+
       >
-        {section == 3 && <Bubbles />}
+        {/* <Images /> */}
+        {/* <SampleBox /> */}
       </motion.group>
     </>
   );
