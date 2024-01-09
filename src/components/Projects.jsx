@@ -25,7 +25,7 @@ export default function Projects() {
       id: 1,
       imageSrc: '/images/Calendar.PNG',
       title: 'Dashboard',
-      description: 'Report For Admin Management. este.guru',
+      description: 'After Schools Management. http://estem.guru/',
     },
     {
       id: 2,
