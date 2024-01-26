@@ -64,7 +64,7 @@ const AboutSection = () => {
     <Section>
       <div className="flex flex-col md:flex-row w-screen">
         <div className="w-full md:w-1/2 transition-opacity duration-300 hover:opacity-80 min-h-64" style={{
-          backgroundImage: "url('/images/photo1.jpg')",
+          backgroundImage: "url('/images/ashok-profile.jpeg')",
           backgroundRepeat: "no-repeat",      // Prevent image from repeating
           backgroundSize: "cover",            // Fit the image to cover the entire div
           // backgroundPosition: "center center"
