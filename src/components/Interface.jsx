@@ -50,11 +50,11 @@ export const Interface = ({ section }) => {
         </div>
       </motion.button>
       <SkillsSections />
-      <div className="relative flex overflow-hidden align-middle justify-center p-4 py-12 mb-5" style={{
+      <div className="relative flex overflow-hidden align-middle justify-center" style={{
 
       }}>
-        <div className="flex flex-col mx-20">
-          <h1 className="text-6xl font-extrabold leading-snug text-center">
+        <div className="flex flex-col mx-10 md:mx-20 my-5">
+          <h1 className="text-3xl md:text-6xl font-extrabold leading-snug text-center">
             <span className="text-gray-100 px-1">My Work</span>
           </h1>
           <Projects />
