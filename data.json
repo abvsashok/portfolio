@@ -1,0 +1,101 @@
+{
+    "name": "Ashok Kumar Chokkapu",
+    "github": "https://github.com/abvsashok",
+    "linkedIn": "https://www.linkedin.com/in/ashok-kumar-chokkapu-40961073/",
+    "email": "ashokchokkapu@gmail.com",
+    "address": "Toronto, Canada.",
+    "designation": "Full Stack Developer ( 9 years of experience )",
+    "resume": "https://docs.google.com/document/d/1-c_cnL7e-3868XBTRup2TLNxsmNqCzl1JE6QczR-waU/edit?usp=sharing",
+    "phone": "+1 437 733 2887",
+    "about": "I am a passionate Full Stack Web Developer with 9 years of experience. Over the past 9 years, I have been dedicated to developing full-stack web applications using , React.js, TypeScript, Java, Spring Boot, Node.js, GraphQL and MySQL Database. Additionally, I have significant expertise in Angular and AWS Cloud service",
+    "projects": [
+        {
+            "title": "A Hybrid Graph Based Neural Network for Neurological Disorder Detection From EEG",
+            "desc": [
+                "The EEG signal based detection for ND diagnosis has employed a variety of deep learning based models.",
+                "This project aims to develop a framework based on hybrid graph neural network considering spatio temporal EEG brain waves"
+            ]
+        },
+        {
+            "title": "Covid Care",
+            "desc": [
+                "COVID CARE is a software product and web application, which provide related information about Covid, and developed one feature that is Chabot. It has the ability to interact with users.",
+                "I took on the role of a front-end developer and actively collaborated with my teammates. One of my major contributions was designing the algorithm for the chatbot services"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "title": "FrontEnd Technologies",
+            "list": [
+                {
+                    "label": "React.js"
+                },
+                {
+                    "label": "Javascript"
+                },
+                {
+                    "label": "Typescript"
+                },
+                {
+                    "label": "Angular"
+                },
+                {
+                    "label": "Redux"
+                },
+                {
+                    "label": "Webix"
+                }
+            ]
+        },
+        {
+            "title": "Backend Technologies",
+            "list": [
+                {
+                    "label": "Node.js"
+                },
+                {
+                    "label": "Java"
+                },
+                {
+                    "label": "Spring Boot"
+                },
+                {
+                    "label": "Next.js"
+                },
+                {
+                    "label": "Sequelize ORM"
+                },
+                {
+                    "label": "GraphQL"
+                }
+            ]
+        },
+        {
+            "title": "Databases and Other Key Skills",
+            "list": [
+                {
+                    "label": "MySQL"
+                },
+                {
+                    "label": "PostgreSQL"
+                },
+                {
+                    "label": "EdgeDB"
+                },
+                {
+                    "label": "Problem-solving"
+                },
+                {
+                    "label": "Object Oriented programming Design"
+                },
+                {
+                    "label": "Git"
+                },
+                {
+                    "label": "AWS"
+                }
+            ]
+        }
+    ]
+}

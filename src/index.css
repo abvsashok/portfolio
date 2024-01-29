@@ -7,9 +7,20 @@
   height: 100vh;
 }
 
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
   margin: 0;
+  background-color: darkslategrey;
 }
 .card:hover .opacity-0 {
   opacity: 1;
+}
+
+.custom-box-shadow {
+  /* @apply shadow-2xl -translate-x-8 -translate-y-12; */
+  box-shadow: 10px 10px 0px 0px #565756;
 }
