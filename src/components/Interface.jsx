@@ -43,21 +43,23 @@ export const Interface = ({ section }) => {
         transition={{ duration: 0.7 }}
         className="m-5"
       >
-        <div className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-yellow-200 via-emerald-700 to-yellow-200  p-4 my-10 mx-3 md:mx-20 bg-white rounded-lg md:p-8 dark:bg-gray-800 text-center" id="about" role="tabpanel" aria-labelledby="about-tab">
+        <div className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-yellow-200 via-emerald-700 to-yellow-200  p-4 my-10 mx-3 md:mx-20 md:p-8 bg-white rounded-lg  dark:bg-gray-800 text-center" id="about" role="tabpanel" aria-labelledby="about-tab">
           <h2 className="text-6xl font-extrabold my-5 mb-10 border-solid border-b-3 border-green-400">About Me</h2>
 
-          <h2 className="mb-3 text-xl md:text-3xl font-bold tracking-tight text-white dark:text-white leading-8 md:leading-10">{data.about} </h2>
+          <h2 className="mb-3 text-xl md:text-3xl font-bold tracking-tight text-white dark:text-white leading-8 md:leading-10">{data.about?.split("..").map((a) => (<>{a}.<br /></>))} </h2>
         </div>
       </motion.button>
       <SkillsSections />
       <div className="relative flex overflow-hidden align-middle justify-center" style={{
 
       }}>
-        <div className="flex flex-col mx-10 md:mx-20 my-5">
+        <div className="flex flex-col gap-6 p-4 my-10 mx-3 md:mx-20 md:p-8">
           <h1 className="text-3xl md:text-6xl font-extrabold leading-snug text-center">
-            <span className="text-gray-100 px-1">My Work</span>
+            <span className="text-6xl font-extrabold my-5 mb-10 border-solid border-b-3 border-green-400 text-gray-100 px-1">My Work</span>
           </h1>
           <Projects />
+
+
         </div>
 
       </div>
@@ -73,31 +75,37 @@ export const HomeBanner = () => {
         <div className="transition-opacity duration-300 hover:opacity-80 "
 
         >
-          <div className="w-60 h-60 custom-box-shadow rounded-md overflow-hidden text-center">
+          <div className="w-60 h-60 custom-box-shadow rounded-md  text-center relative">
             {/* You can add an image or other content inside the avatar here */}
+            <div className="absolute bg-[#2e7a7a] px-5 py-1 text-green-100 rounded-md bottom-[-20px] left-[-20px]">
+              <div className="font-bold text-lg">
+                {data.designation}
+              </div>
+              <div className="font-semibold">
+                9 years of Experience
+              </div>
+            </div>
             <img
               src="images/ashok-profile.jpeg"
               alt="Avatar"
               className="w-full h-full object-cover shadow hover:shadow-lg"
             />
-            {/* <div className="absolute bottom-0">
-              Sotware Developer
-            </div> */}
+
           </div>
           {/* <img src="images/vamsi-profile.jpeg" className="border-stone-500" /> */}
         </div>
       </div>
       <div className="text-center p-3 md:4/4 w-3/4 items-center">
         {/* <ProjectsSection /> */}
-        <div className="flex flex-col md:flex-row gap-3 my-3 justify-end">
+        {/* <div className="flex flex-col md:flex-row gap-3 my-3 justify-end">
           <div className="flex space-x-2  px-2 justify-center">
 
             <span className="text-white font-bold text-xl md:text-2xl border-b-3 text-center border-green-200">{data.designation}</span>
           </div>
 
-        </div>
+        </div> */}
         <TitleFlip text={data.name} />
-        <div className="flex flex-col md:flex-row gap-10 my-3 ">
+        <div className="flex flex-col md:flex-row gap-5 my-5 ">
           <div className="flex space-x-2 justify-center">
             <span>
               <FontAwesomeIcon icon={faEnvelope} className="text-white" size="xl" />

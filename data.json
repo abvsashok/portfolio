@@ -4,10 +4,10 @@
     "linkedIn": "https://www.linkedin.com/in/ashok-kumar-chokkapu-40961073/",
     "email": "ashokchokkapu@gmail.com",
     "address": "Toronto, Canada.",
-    "designation": "Full Stack Developer ( 9 years of experience )",
+    "designation": "Full Stack Developer",
     "resume": "https://docs.google.com/document/d/1-c_cnL7e-3868XBTRup2TLNxsmNqCzl1JE6QczR-waU/edit?usp=sharing",
     "phone": "+1 437 733 2887",
-    "about": "I am a passionate Full Stack Web Developer with 9 years of experience. Over the past 9 years, I have been dedicated to developing full-stack web applications using , React.js, TypeScript, Java, Spring Boot, Node.js, GraphQL and MySQL Database. Additionally, I have significant expertise in Angular and AWS Cloud service",
+    "about": "I am a passionate Full Stack Web Developer with 9 years of experience.. Throughout my career, I have been dedicated to developing full-stack web applications using React.js, TypeScript, Java, Spring Boot, Node.js, GraphQL and MySQL Database.. Additionally, I have significant expertise in Angular and AWS Cloud service",
     "projects": [
         {
             "title": "A Hybrid Graph Based Neural Network for Neurological Disorder Detection From EEG",
@@ -26,7 +26,7 @@
     ],
     "skills": [
         {
-            "title": "FrontEnd Technologies",
+            "title": "Frontend Technologies",
             "list": [
                 {
                     "label": "React.js"
