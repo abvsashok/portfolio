@@ -15,6 +15,7 @@
 body {
   margin: 0;
   background-color: #305050;
+  background: radial-gradient(circle, #305050 0%, rgb(0 0 0 / 51%) 100%);
 }
 .card:hover .opacity-0 {
   opacity: 1;
@@ -23,4 +24,11 @@ body {
 .custom-box-shadow {
   /* @apply shadow-2xl -translate-x-8 -translate-y-12; */
   box-shadow: 10px 10px 0px 0px #565756;
+
 }
+
+.skills-background {
+  background: radial-gradient(circle, rgb(161 164 158) 0%, #ADD8E6 100%);
+}
+
+/* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */

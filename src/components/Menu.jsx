@@ -54,9 +54,9 @@ export const Menu = (props) => {
           <a target="_blank"
             href={data.resume}
           >
-            <button className="text-green-400 border-white-600 border hover:bg-gray-100 hover:text-gray-600 font-medium px-3 py-2 rounded-md">
+            <button className="text-green-400 border-green-300 border hover:bg-gray-100 hover:text-gray-600 font-medium px-2 py-2 rounded-md">
               <div className="rounded-md flex flex-col">
-                {"RESUME".split("").map((c) => (<span className="font-bold text-center"> {c}</span>))}
+                {"RESUME".split("").map((c) => (<span className="font-extrabold text-center"> {c}</span>))}
 
               </div>
             </button>

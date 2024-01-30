@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faVcard, faAddressBook, faAddressCard } from '@fortawesome/free-regular-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faAddressBook, faAddressCard } from '@fortawesome/free-regular-svg-icons';
+import { faPhone, faDatabase, faAtom, faServer, faLaptop } from '@fortawesome/free-solid-svg-icons';
 import TitleFlip from "./TitleFlip";
 import data from "/data.json";
 import Projects from "./Projects";
@@ -46,7 +46,7 @@ export const Interface = ({ section }) => {
         <div className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-yellow-200 via-emerald-700 to-yellow-200  p-4 my-10 mx-3 md:mx-20 md:p-8 bg-white rounded-lg  dark:bg-gray-800 text-center" id="about" role="tabpanel" aria-labelledby="about-tab">
           <h2 className="text-6xl font-extrabold my-5 mb-10 border-solid border-b-3 border-green-400">About Me</h2>
 
-          <h2 className="mb-3 text-xl md:text-3xl font-bold tracking-tight text-white dark:text-white leading-8 md:leading-10">{data.about?.split("..").map((a) => (<>{a}.<br /></>))} </h2>
+          <h2 className="mb-3 text-xl md:text-3xl font-bold tracking-tight text-white dark:text-white leading-9 md:leading-9">{data.about?.split("..").map((a) => (<>{a}.<br /></>))} </h2>
         </div>
       </motion.button>
       <SkillsSections />
@@ -88,7 +88,7 @@ export const HomeBanner = () => {
             <img
               src="images/ashok-profile.jpeg"
               alt="Avatar"
-              className="w-full h-full object-cover shadow hover:shadow-lg"
+              className="w-full h-full object-cover shadow hover:shadow-lg rounded-md"
             />
 
           </div>
@@ -134,19 +134,24 @@ export const HomeBanner = () => {
 
 const SkillsSections = () => {
   return <div className=" w-full">
-    <div className="p-4 bg-[#efefef]  md:p-8 " id="stats" role="tabpanel" aria-labelledby="stats-tab">
-      <h2 className="text-6xl font-extrabold my-5 mb-10 text-center border-solid border-b-3 border-green-400">Skills</h2>
+    <div className="p-4 py-10 skills-background  md:p-8 " id="stats" role="tabpanel" aria-labelledby="stats-tab">
+      <h2 className="text-6xl font-extrabold my-1 mb-10 text-center border-solid border-b-3 border-green-400">Skills</h2>
       <dl className="flex flex-wrap justify-center gap-5 ">
-        {data?.skills?.map((group) => {
+        {data?.skills?.map((group, index) => {
+          let icon = faAtom;
+          if (index == 1)
+            icon = faLaptop
+          if (index == 2)
+            icon = faServer;
           return <>
-            <SKillsGroup group={group} />
+            <SKillsGroup group={group} icon={icon} />
           </>
         })}
       </dl>
     </div>
   </div>
 };
-const SKillsGroup = ({ group }) => {
+const SKillsGroup = ({ group, icon }) => {
   return <>
 
     <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700">
@@ -158,13 +163,11 @@ const SKillsGroup = ({ group }) => {
         {group?.list?.map((s) => {
           return <>
             <li>
-              <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-                <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 21">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M7.24 7.194a24.16 24.16 0 0 1 3.72-3.062m0 0c3.443-2.277 6.732-2.969 8.24-1.46 2.054 2.053.03 7.407-4.522 11.959-4.552 4.551-9.906 6.576-11.96 4.522C1.223 17.658 1.89 14.412 4.121 11m6.838-6.868c-3.443-2.277-6.732-2.969-8.24-1.46-2.054 2.053-.03 7.407 4.522 11.959m3.718-10.499a24.16 24.16 0 0 1 3.719 3.062M17.798 11c2.23 3.412 2.898 6.658 1.402 8.153-1.502 1.503-4.771.822-8.2-1.433m1-6.808a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" />
-                </svg>
+              <div href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <FontAwesomeIcon icon={icon} className="text-black" size="xl" />
                 <span className="flex-1 ms-3 whitespace-nowrap">{s.label}</span>
                 {/* <span className="inline-flex items-center justify-center px-2 py-0.5 ms-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span> */}
-              </a>
+              </div>
             </li></>
         })}
 

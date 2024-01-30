@@ -9,7 +9,7 @@ const TitleFlip = ({ text = "" }) => {
             {text.split(" ")?.map((word) => {
                 return <div className="flex justify-center">
                     {word.split("").map((el, i) => (
-                        <AnimatePresence key={i}>
+                        <AnimatePresence key={`k-${i}-animate`}>
                             <motion.div
                                 key={`${i}-key`}
                                 initial={{ opacity: 0, rotateY: 90 }}
