@@ -105,7 +105,7 @@ export const HomeBanner = () => {
 
         </div> */}
         <TitleFlip text={data.name} />
-        <div className="flex flex-col md:flex-row gap-5 my-5 ">
+        <div className="flex flex-col md:flex-row gap-5 my-2 mt-7 ">
           <div className="flex space-x-2 justify-center">
             <span>
               <FontAwesomeIcon icon={faEnvelope} className="text-white" size="xl" />
