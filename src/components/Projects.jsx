@@ -7,7 +7,7 @@ const Card = ({ imageSrc, title, description }) => {
       <img
         src={imageSrc}
         alt={title}
-        className="w-full transition-transform duration-300 transform group-hover:scale-110"
+        className="w-full h-full transition-transform duration-300 transform group-hover:scale-110"
       />
       {/* Text Overlay */}
       <div className="absolute inset-0 flex items-center justify-center opacity-0 bg-black bg-opacity-50 group-hover:opacity-100 transition-opacity duration-300">

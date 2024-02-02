@@ -12,9 +12,7 @@ const Section = (props) => {
   // flex flex-col items-start justify-center
   return (
     <motion.section
-      className={`
-   
-  `}
+      className={``}
       initial={{
         opacity: 1,
         y: 5,
@@ -46,20 +44,16 @@ export const Interface = ({ section }) => {
         <div className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-yellow-200 via-emerald-700 to-yellow-200  p-4 my-10 mx-3 md:mx-20 md:p-8 bg-white rounded-lg  dark:bg-gray-800 text-center" id="about" role="tabpanel" aria-labelledby="about-tab">
           <h2 className="text-6xl font-extrabold my-5 mb-10 border-solid border-b-3 border-green-400">About Me</h2>
 
-          <h2 className="mb-3 text-xl md:text-3xl font-bold tracking-tight text-white dark:text-white leading-9 md:leading-9">{data.about?.split("..").map((a) => (<>{a}.<br /></>))} </h2>
+          <h2 className="mb-3 text-xl md:text-3xl font-bold tracking-tight text-green-100 dark:text-white leading-8 md:leading-10">{data.about?.split("..").map((a) => (<>{a}.<br /></>))} </h2>
         </div>
       </motion.button>
       <SkillsSections />
-      <div className="relative flex overflow-hidden align-middle justify-center" style={{
-
-      }}>
+      <div className="relative flex overflow-hidden align-middle justify-center">
         <div className="flex flex-col gap-6 p-4 my-10 mx-3 md:mx-20 md:p-8">
-          <h1 className="text-3xl md:text-6xl font-extrabold leading-snug text-center">
-            <span className="text-6xl font-extrabold my-5 mb-10 border-solid border-b-3 border-green-400 text-gray-100 px-1">My Work</span>
+          <h1 className="text-3xl md:text-6xl font-extrabold leading-snug text-center mb-5">
+            <span className="text-6xl font-extrabold my-5 border-solid border-b- border-green-400 text-gray-100 px-1 text-green-100">My Work</span>
           </h1>
           <Projects />
-
-
         </div>
 
       </div>
@@ -92,43 +86,32 @@ export const HomeBanner = () => {
             />
 
           </div>
-          {/* <img src="images/vamsi-profile.jpeg" className="border-stone-500" /> */}
         </div>
       </div>
       <div className="text-center p-3 md:4/4 w-3/4 items-center">
-        {/* <ProjectsSection /> */}
-        {/* <div className="flex flex-col md:flex-row gap-3 my-3 justify-end">
-          <div className="flex space-x-2  px-2 justify-center">
-
-            <span className="text-white font-bold text-xl md:text-2xl border-b-3 text-center border-green-200">{data.designation}</span>
-          </div>
-
-        </div> */}
         <TitleFlip text={data.name} />
         <div className="flex flex-col md:flex-row gap-5 my-2 mt-7 ">
-          <div className="flex space-x-2 justify-center">
+          <div className="flex space-x-2 justify-center items-center">
             <span>
-              <FontAwesomeIcon icon={faEnvelope} className="text-white" size="xl" />
+              <FontAwesomeIcon icon={faEnvelope} className="text-white" size="lg" />
             </span>
-            <span className="text-white font-bold  text-xl text-center">{data.email}</span>
+            <span className="text-green-100 font-bold  text-xl text-center">{data.email}</span>
           </div>
-          <div className="flex space-x-2 justify-center">
+          <div className="flex space-x-2 justify-center items-center">
             <span>
-              <FontAwesomeIcon icon={faPhone} className="text-white" size="xl" />
+              <FontAwesomeIcon icon={faPhone} className="text-white" size="lg" />
             </span>
-            <span className="text-white font-bold  text-xl text-center">{data.phone}</span>
+            <span className="text-green-100 font-bold  text-xl text-center">{data.phone}</span>
           </div>
-          <div className="flex space-x-2 justify-center">
+          <div className="flex space-x-2 justify-center items-center">
             <span>
-              <FontAwesomeIcon icon={faAddressCard} className="text-white" size="xl" />
+              <FontAwesomeIcon icon={faAddressCard} className="text-white" size="lg" />
             </span>
-            <span className="text-white font-bold  text-xl text-center">{data.address}</span>
+            <span className="text-green-100 font-bold  text-xl text-center">{data.address}</span>
           </div>
         </div>
       </div>
     </div>
-
-
   </>
 }
 
