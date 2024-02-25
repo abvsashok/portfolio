@@ -7,22 +7,9 @@
     "designation": "Full Stack Developer",
     "resume": "https://docs.google.com/document/d/1-c_cnL7e-3868XBTRup2TLNxsmNqCzl1JE6QczR-waU/edit?usp=sharing",
     "phone": "+1 437 733 2887",
-    "about": "I am a passionate Full Stack Web Developer with 9 years of experience.. Throughout my career, I have been dedicated to developing full-stack web applications using React.js, TypeScript, Java, Spring Boot, Node.js, GraphQL and MySQL Database.. Additionally, I have significant expertise in Angular and AWS Cloud service",
+    "about": "I am a passionate Full Stack Web Developer with 9 years of experience.. Throughout my career, I have been dedicated to developing full-stack web applications using React.js, TypeScript, Java, Spring Boot, Node.js, GraphQL and MySQL Database.. Additionally, I have significant expertise in Angular, Electron and AWS Cloud service",
     "projects": [
-        {
-            "title": "A Hybrid Graph Based Neural Network for Neurological Disorder Detection From EEG",
-            "desc": [
-                "The EEG signal based detection for ND diagnosis has employed a variety of deep learning based models.",
-                "This project aims to develop a framework based on hybrid graph neural network considering spatio temporal EEG brain waves"
-            ]
-        },
-        {
-            "title": "Covid Care",
-            "desc": [
-                "COVID CARE is a software product and web application, which provide related information about Covid, and developed one feature that is Chabot. It has the ability to interact with users.",
-                "I took on the role of a front-end developer and actively collaborated with my teammates. One of my major contributions was designing the algorithm for the chatbot services"
-            ]
-        }
+       
     ],
     "skills": [
         {
@@ -36,6 +23,9 @@
                 },
                 {
                     "label": "Typescript"
+                },
+                 {
+                    "label": "Electron"
                 },
                 {
                     "label": "Angular"
