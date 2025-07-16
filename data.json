@@ -7,7 +7,7 @@
     "designation": "Full Stack Developer",
     "resume": "https://docs.google.com/document/d/1-c_cnL7e-3868XBTRup2TLNxsmNqCzl1JE6QczR-waU/edit?usp=sharing",
     "phone": "+1 437 733 2887",
-    "about": "I am a passionate Full Stack Web Developer with 9 years of experience.. Throughout my career, I have been dedicated to developing full-stack web applications using React.js, TypeScript, Java, Spring Boot, Node.js, GraphQL and MySQL Database.. Additionally, I have significant expertise in Angular, Electron and AWS Cloud service",
+    "about": "I am a passionate Full Stack Web Developer with 10 years of experience.. Throughout my career, I have been dedicated to developing full-stack web applications using React.js, Angular, TypeScript, Java, Spring Boot, Node.js, GraphQL and MySQL Database.. Additionally, I have significant expertise in CloudOps, Jenkins CICD pipelines and AWS Cloud service",
     "projects": [
        
     ],
@@ -71,7 +71,7 @@
                     "label": "PostgreSQL"
                 },
                 {
-                    "label": "EdgeDB"
+                    "label": "CloudOps"
                 },
                 {
                     "label": "Problem-solving"
