@@ -76,7 +76,7 @@ export const HomeBanner = () => {
                 {data.designation}
               </div>
               <div className="font-semibold">
-                9 years of Experience
+                10 years of Experience
               </div>
             </div>
             <img
